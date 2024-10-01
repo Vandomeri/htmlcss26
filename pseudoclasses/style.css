@@ -50,3 +50,50 @@ nav {
 .box:nth-child(2n) {
     background-color: red;
 }
+
+.numbers {
+    display: flex;
+    max-width: 50%;
+    gap: 32px;
+}
+
+
+.numbers div {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 32px;
+}
+
+.numbers div:last-child {
+    border: none;
+}
+
+
+.reviews {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.reviews_item {
+    flex: 1 1 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 28px;
+}
+
+.reviews_name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.reviews_name::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/checkmark.svg');
+}
