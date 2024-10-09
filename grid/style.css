@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    background-color: darkmagenta;
+    padding: 10px;
+    color: #fff;
+
+    border: 2px solid blueviolet;
+
+}
+
+
+@media(max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
